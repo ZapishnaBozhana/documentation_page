@@ -40,7 +40,12 @@ p {
 /*Header*/
 .header {
   margin-bottom: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -72,6 +77,9 @@ p {
 /*Sidebar*/
 .sidebar {
   width: 33%;
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
 }
 .sidebar-menu__link {
   white-space: nowrap;
@@ -107,6 +115,7 @@ p {
 .flex-container {
   display: flex;
   gap: 40px;
+  align-items: flex-start;
 }
 .main_content {
   width: 67%;
